@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt");
 const User = require("../module/User");
 const jwt = require("jsonwebtoken");
 const { error, success } = require("../utils/responseWrapper");
-const singupContoller = async (req, res) => { 
+const singupContoller = async (req, res) => {   
   try {
     const { email, password,name } = req.body;
 
